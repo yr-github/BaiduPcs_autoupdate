@@ -8,13 +8,13 @@
 仅支持linux系统 ，支持多个百度账户使用;
  1. 下载[BaiduPCS-Go](https://github.com/iikira/BaiduPCS-Go),并根据教程登陆你的百度账号获取uid。
  2. 克隆到本地后，编辑config.ini
-> [prconfig]
-users = 1#用户数目
-checktime = 3600 #每隔多久检查一次文件改动并上传
-loglocate = /var/log/baidu.log #log存储地址
-[user1]
-uid = xxxxx #通过BaiduPCS-Go登陆你的账号，获取的uid
-upload_path = /root/upload #需要上传的文件(此文件夹下所有文件/文件夹将全部上传)
+> [prconfig]<br>
+users = 1#用户数目<br>
+checktime = 3600 #每隔多久检查一次文件改动并上传<br>
+loglocate = /var/log/baidu.log #log存储地址<br>
+[user1]<br>
+uid = xxxxx #通过BaiduPCS-Go登陆你的账号，获取的uid<br>
+upload_path = /root/upload #需要上传的文件(此文件夹下所有文件/文件夹将全部上传)<br>
 
  3. 使用任何守护进程工具启动checkfile.py即可
 
